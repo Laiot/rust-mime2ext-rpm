@@ -42,6 +42,7 @@ use the "%{crate}" crate.
 %package     -n %{name}+default-devel
 Summary:        %{summary}
 BuildArch:      noarch
+Provides: bundled(mime-db) = 1.52.0
 
 %description -n %{name}+default-devel %{_description}
 
