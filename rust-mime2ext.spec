@@ -26,6 +26,7 @@ Given a mimetype, suggest a file extension.}
 %package        devel
 Summary:        %{summary}
 BuildArch:      noarch
+Provides:       bundled(mime-db) = 1.52.0
 
 %description    devel %{_description}
 
@@ -42,7 +43,6 @@ use the "%{crate}" crate.
 %package     -n %{name}+default-devel
 Summary:        %{summary}
 BuildArch:      noarch
-Provides: bundled(mime-db) = 1.52.0
 
 %description -n %{name}+default-devel %{_description}
 
